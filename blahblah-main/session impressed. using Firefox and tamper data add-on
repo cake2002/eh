@@ -1,0 +1,29 @@
+Add extensions: On FireFox
+
+1) Cookie Editor
+
+2)Tamper Data for FF Quantum 
+
+
+Visit http://techpanda.org
+
+Username: admin@google.com
+Password: password2010
+
+Once dashboard appears > Go to Cookie editor extension and press that
+
+Copy the "Value" as well as the site i.e "http://www.techpanda.org/dashboard.php"
+
+Go to FireFox Setting > Privacy and Security > Clear Data 
+
+press ok > press ok > rename the path from index.php to dashboard.php
+
+press ok > then you can see the option cookie in the grid 
+
+remove the path in > PHPSCID and substitue with c7654a93efbcc2d5e67f8e75b23778e5 (the copied value)
+
+press ok
+
+Now without login and password we can enter the dashboard.php
+
+

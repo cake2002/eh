@@ -1,0 +1,21 @@
+open wireshark 
+start capture
+go to chrome > go to www.techpanda.org
+Email : admin@google.com
+Password : Password2010
+submit
+
+add contact and save 
+
+stop capture in wireshark
+
+search for http
+
+there will be one HTTP/POST req
+
+click on that
+
+and in lower window > hyper text protocol will appear
+
+expand that and uh ll see that we used which email and pass to login
+

