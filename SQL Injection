@@ -1,0 +1,24 @@
+DVWA-Master File should be extracted 
+ 
+copy and paste the DVWA file in xamp>htdocs
+
+rename it to "dvwa"
+
+STart Xamp 
+
+go to xamp database and create new database and name it as "sql_db"
+
+enter into chrome "localhost/dvwa"
+
+Username: admin
+Password: password
+
+create/reset database 
+
+DVWA securtiy > Low >Submit
+
+
+SQL Injection > just enter any number and uh will get details
+
+
+

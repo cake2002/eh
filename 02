@@ -1,0 +1,10 @@
+Download Cryptool
+open cryptool
+File > New > enter the text you want to encrypt
+Go to Encrypt/Decrypt > Symmetric (modern) > RC4 > Choose "8 bit" in key length.
+And press on Encrypt .
+
+
+
+For Decrypt
+go to encrypt/decrypt > RC4 > press Decrypt

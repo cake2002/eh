@@ -1,0 +1,69 @@
+Download Xampp and open Xampp
+
+Start Apache and mysql in xampp
+
+
+
+Search for DVWA-Master file and extract it 
+
+
+copy DVWA-Master and paste it in xampp> htdocs
+
+
+open DVWA-Master file  > config > there will be one config file 
+
+copy and paste that config file
+
+rename that copied file to ".php" so that php file will be formed
+
+there will be two files PHP and DIST
+
+open .php file with notepad
+
+php code will appear 
+
+
+change the db_user as -----> root
+
+change db_password as ------> remove everything keep it blank and save the file
+
+close the file
+
+stop xamp and start again
+
+now to go website "http:/localhost/DVWA-Master/setup.php"  (file name should be the same which we copy pasted "DVWA-Master")
+
+dvwa page will appear
+
+click on "create/reset database" , login page will appear
+
+Username: admin
+Password: password
+
+Go to dvwa security > change it to low > submit
+
+Go to Xss stored > Name: test > message : <scipt>alert("This is Eh practical")</script>
+
+click on signin guestbook > alert will pop up
+
+go to dvwa-security > enable phppids > phpids message will be appeared in the box
+
+alert will be appeared and then click ok 
+
+go to Xss stored > enter the name and message (any text)
+
+enter another name and message : <script>alert("Hello world")</script> 
+
+some text will appear 
+
+
+go to dvwa Security > View ids log 
+
+
+if the op is :
+
+
+hacking activity successful you are logged in 
+
+Prac is done!
+

@@ -1,0 +1,87 @@
+command 1 ) nmap : "nmap"
+Stands for "Network Mapper"
+it is an open source linux tool for network and security auditing
+this tool helps network administrators to reveal hosts and services on various systems
+Namp is referred as "Swiss Army Knife"
+
+
+Working :
+Nmap works locally and remotely
+uses : scanning for open ports , discovering vulnerabilities, network mapping and maintenance.
+
+
+____________________________________
+
+TCP flags:
+
+In TCP Connections , TCP flags are used to indicate that a particular state of connection or to provide some additional useful information like 
+trouble shooting purpose or to handle a control of particular connection.
+
+
+_____________________________________________________________
+
+Command 2) nmap -help : to display all the commands.
+
+
+
+SYN Scan command:  (usually performed on ports)
+
+command : nmap - p22,113,139 scanme.nmap.org
+
+uses: invokes the establishment of a half connection with destined target website.
+syn scanning does not invovle full conn.
+and thus called "half-open scanning technique".
+
+
+________________________________________
+
+
+Ack scan 
+
+command: nmap -sA -T4 scanme.nmap.org
+
+-p stands for port no.
+
+-T4 stands for Time mechanism using time mechanism such as -T1 -T2 -T3 -T4 we can more aggresively run the scan.
+
+
+uses: it never determines open ports, ack scan is enabled by specifying the -sA option.
+
+_____________________________________________________________________
+
+FIN Scan 
+
+command : nmap -sF -T4 scanme.org
+
+states whether the attacker sends a packet with only fin flag enabled.
+
+If the target doesnt responds then it means port is open
+
+if the target responds then the port on target is closed.
+
+___________________________________________________
+
+
+Null scan (-sN)
+
+command: nmap -sN -p22 scanme.org
+
+will send a tcp segment with no flags in the packet header.
+
+if a port is open then will get the response 
+if no flag are set then the target will not know how to handle the  request.
+if the port  is closed then the target will send a packet in response.
+
+
+
+_____________________________________
+
+Xmas 
+
+command: nmap -sX -T4 www.gmail.com
+
+clears the syn bit and thus fly right into through the firewall and packet filtering routers.
+
+this scan doesnt work with agaisnt most Unix-based systems.
+
+

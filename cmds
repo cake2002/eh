@@ -1,0 +1,46 @@
+ipconfig :  " ipconfig "
+
+designed to run from windows prompt, allows us to get the ip add info 
+
+allows some control over active TCP/IP connections.
+
+replacement of older winipcfg utility
+
+op contains the default add,network adapters.
+
+
+_______________________________________________________________________________
+
+
+ping : command : " ping www.google.com "
+
+ping [-n] [-r] [-s Packet size] [-src hostname/Ip_add] Host [count]
+
+this command sends an internet control msg protocol (ICMP) Eco_Request to obtain the ICMP ECHO_Response from host or gateway.
+
+ping command is useful for :
+1) determining the status of the network 
+2)tracking and isolating hardware and software problems.
+3) testing ,measuring and managing net.
+
+_____________________________________________________________________________________
+
+
+
+
+netsat : command "netsat"
+
+is a common command line TCP/IP network utility available .
+netsat provides information and statistics about protocols in use and current TCP/IP network connections.
+
+____________________________________________________________________________________
+
+
+
+
+traceroute: command "tracert www.google.com"
+
+used to show several details about the path that a packet takes from the computer or device you are on to whtever destination.
+
+enter the word tracert followed by space then the domain name
+
